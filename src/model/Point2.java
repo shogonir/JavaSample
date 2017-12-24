@@ -13,6 +13,19 @@ public class Point2 {
         this.y = y;
     }
 
+    public double getX() {
+        return this.x;
+    }
+
+    public double getY() {
+        return this.y;
+    }
+
+    public void set(double x, double y) {
+        this.x = x;
+        this.y = y;
+    }
+
     public double magnitude() {
         return Math.sqrt(x * x + y * y);
     }
@@ -27,5 +40,10 @@ public class Point2 {
 
     public double outerProduct(Point2 point) {
         return this.x * point.y - this.y * point.x;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Point2(x=%f, y=%f)", this.x, this.y);
     }
 }

@@ -12,4 +12,12 @@ public class Line2 {
         this.s = s;
         this.t = t;
     }
+
+    public Point2 getS() {
+        return this.s;
+    }
+
+    public Point2 getT() {
+        return this.t;
+    }
 }
